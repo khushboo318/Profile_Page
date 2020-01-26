@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+#circle_image {
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+#temp {
+  background: url(img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 11px;
+  height: 220px;
+}
+.parent{
+    position: relative;
+}
+.over-img{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    bottom: 50%;
+}
+.thumbnail {
+  width: 1200;
+  padding: 20px;
+  border: 2px solid rgb(214, 212, 212);
+  margin: 10px 0px 0px 0px;
+}
+.row {
+   margin: 100px 20px 0px 20px;
+
+}
+.btn-light{
+    border: 1px solid #575555;
+}
+.btn{
+    border-radius: 0px;
+}
+hr{
+    border: 1px solid #cfc9c9;
+}
+#details{
+    padding-top: 30px;
+}
+p, form {
+    padding : 15px 25px 0px 25px;
+}
+.container{
+    margin: 40px;
+}
+</style>
+</head>
+<body>
+<div class ="container">
+    <div class="parent">
+       <div id="temp"></div>
+       <img class="over-img" id="circle_image" src="img4.jpg" alt="Avatar" width="200px">
+    </div>
+    <div class="thumbnail">
+        <a href="#"><i class="fas fa-pen" style="font-size:20px; float: right;"></i></a>
+        <div class="row">
+            <div class="col-sm-8">
+               <h2>Khushboo Kumari</h2>
+               <h4>Student at BIT Mesra</h4>
+               <h6>Ranchi</h6>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Add Profile Section 
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" >
+                    <li><a href="#">Intro</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                     </ul>
+                    <button type="button" class="btn btn-light">More..</button>
+                </div>
+            </div>
+            <div id="details" class="col-sm-4">    
+               <a href="#"><i class="fas fa-envelope"  style="font-size:20px;color: #928f8f;" ></i></a>  Freelancer </br>
+               <a href="#"><i class="fas fa-university" style="font-size:20px;color: red;"></i></a>  BIT </br>
+               <a href="#"><i class="fas fa-address-book" style="font-size:20px;color: #928f8f;"></i></a>  See Contact info</br>
+               <a href="#"><i class="fa fa-users" style="font-size:20px;color: #928f8f;"></i></a>  See connection (+500)
+            </div>
+        </div>  
+        <hr>
+        <p>
+            A Front end developer | UI developer with 2 month experienced. Hard-working individual with proficiency in HTML, JavaScript, CSS, jQuery, Bootsratp, SQL, PHP and Angular as well as strong ability to communicate and work in a team effectively seeks to apply for the position of Intern Front-end Developer.</br>
+           <form action="upload.php" method="post" enctype="multipart/form-data">
+               Select resume to upload:</br>
+               <input type="file" name="fileToUpload" id="fileToUpload"></br>
+               <a href="k_resume.pdf"><button type="submit" class="btn-bg">Download CV</button></a>
+           </form>
+        </p>
+    </div>
+</div>
+
+</body>
+</html> 
